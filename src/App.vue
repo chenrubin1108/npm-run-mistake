@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+    <div>123</div>
     <img alt="Vue logo" src="./assets/logo.png">
     <HelloWorld msg="Welcome to Your Vue.js App"/>
   </div>
@@ -7,9 +8,10 @@
 
 <script>
 import HelloWorld from './components/HelloWorld.vue'
-
+import logs from './mixins/log'
 export default {
   name: 'App',
+  mixins:[logs],
   components: {
     HelloWorld
   }
